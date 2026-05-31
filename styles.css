@@ -97,6 +97,17 @@ a {
   max-width: 900px;
 }
 
+.logo-mark {
+  margin-bottom: 2rem;
+}
+
+.logo-mark img {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
 .eyebrow {
   font-size: 0.93rem;
   letter-spacing: 0.22em;
