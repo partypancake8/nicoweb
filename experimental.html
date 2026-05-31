@@ -8,159 +8,221 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="experimental.css" />
   </head>
-  <body class="experimental">
-    <!-- Experimental Interactive layout start -->
-    <header class="nav-banner">
-      <nav class="nav-wrapper experimental-nav">
-        <a class="logo" href="index.html">Nico Barrera</a>
+  <body>
+
+    <!-- ── Experimental Interactive ──────────────────────────────
+         Direction: Expressive layout — staggered card stack hero,
+         glowing borders, CSS entrance animations, asymmetric tiles.
+         Inspired by creative developer portfolios, Awwwards SOTD.
+    ──────────────────────────────────────────────────────────── -->
+
+    <header>
+      <nav class="nav-wrapper">
+        <a class="nav-logo" href="index.html">Nico Barrera</a>
         <button class="nav-toggle" aria-label="Open navigation">Menu</button>
         <ul class="nav-links">
           <li><a href="index.html">Original</a></li>
           <li><a href="editorial.html">Editorial</a></li>
           <li><a href="studio.html">Creative Studio</a></li>
           <li><a href="minimal.html">Technical Minimalist</a></li>
-          <li><a href="experimental.html">Experimental</a></li>
+          <li><a href="experimental.html" aria-current="page">Experimental</a></li>
           <li><a href="premium.html">Premium</a></li>
         </ul>
       </nav>
     </header>
 
-    <main class="experimental-shell">
-      <section class="experimental-hero">
+    <main>
+
+      <!-- ── Hero — staggered card stack ───────────────────────────
+           Three cards with horizontal offsets. Hovering the stack
+           shifts the cards apart. CSS keyframe entrance animation.
+      ──────────────────────────────────────────────────────────── -->
+      <section class="hero" id="home">
         <div class="hero-stack">
-          <div class="hero-card hero-card-1">
-            <span>Sound Design</span>
+
+          <!-- card 1: eyebrow label, offset left -->
+          <div class="hcard hcard-1">
+            <span class="hcard-1-dot" aria-hidden="true"></span>
+            <span class="hcard-1-label">Sound Design · Audio Engineering · Mixing</span>
           </div>
-          <div class="hero-card hero-card-2">
-            <h1>Immersive audio experiences for film, games, and media.</h1>
-            <p class="hero-text">
-              Subtle motion and layered composition deliver a memorable identity for Nico's work.
+
+          <!-- card 2: main hero content -->
+          <div class="hcard hcard-2">
+            <h1>Crafting immersive audio experiences for film, games, and interactive media.</h1>
+            <p>
+              Dynamic sound designer with a passion for creating sonic
+              landscapes that elevate storytelling and engagement.
             </p>
-            <div class="hero-actions">
-              <a class="button button-primary" href="#featured">Explore Work</a>
-              <a class="button button-secondary" href="#contact">Contact</a>
+            <div class="hcard-2-btns">
+              <a href="#featured" class="btn-glow">Explore Work</a>
+              <a href="#contact" class="btn-subtle">Get in Touch</a>
             </div>
           </div>
-          <div class="hero-card hero-card-3">
+
+          <!-- card 3: portrait image -->
+          <div class="hcard hcard-3">
             <img src="image.png" alt="Nico Barrera" />
           </div>
+
         </div>
       </section>
 
-      <section class="experimental-about" id="about">
+      <!-- ── About ─────────────────────────────────────────────────
+           Bio text left, floating panel right that lifts on hover.
+      ──────────────────────────────────────────────────────────── -->
+      <section class="about-section" id="about">
         <div class="about-copy">
           <p class="eyebrow">About</p>
           <h2>Nico Barrera</h2>
           <p>
-            Sound engineer and designer focused on creating immersive audio experiences.
-            Specialized in mixing, sound design, and audio post-production for film,
-            games, and broadcast media.
+            Sound engineer and designer focused on creating immersive audio
+            experiences. Specialized in mixing, sound design, and audio
+            post-production for film, games, and broadcast media.
           </p>
           <p>
-            Passionate about sonic storytelling and pushing the boundaries of what audio
-            can achieve in interactive media.
+            Passionate about sonic storytelling and pushing the boundaries of
+            what audio can achieve in interactive media.
           </p>
         </div>
-        <div class="interactive-panel">
-          <div class="floating-panel">
-            <p>Interactive narrative</p>
-            <p>Detailed engineering</p>
-            <p>Produced with care</p>
+        <div class="float-panel">
+          <div class="panel-item">
+            <strong>Film &amp; Documentary</strong>
+            Sound design, Foley, atmospheric mixing
+          </div>
+          <div class="panel-item">
+            <strong>Interactive &amp; Games</strong>
+            Audio implementation, sonic branding
+          </div>
+          <div class="panel-item">
+            <strong>Broadcast &amp; Podcast</strong>
+            Dialogue editing, mixing, mastering
           </div>
         </div>
       </section>
 
-      <section class="experimental-feature" id="featured">
-        <div class="feature-headline">
-          <p class="eyebrow">Featured</p>
-          <h2>Demo Reel + Sound Suite</h2>
-          <p>
-            Layered presentation with motion-ready elements and a distinct visual voice.
-          </p>
-        </div>
-        <div class="experimental-grid">
-          <article class="exp-card video-card">
-            <h3>Demo Reel 2024</h3>
-            <div class="video-frame">
-              <iframe
-                src="https://www.youtube.com/embed/5qap5aO4i9A"
-                title="Demo Reel"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </div>
-          </article>
-          <article class="exp-card audio-card">
-            <h3>Audio Demos</h3>
-            <div class="audio-list experimental-audio">
-              <div class="audio-item">
-                <span>Action SFX Suite</span>
-                <audio controls src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
-              </div>
-              <div class="audio-item">
-                <span>Ambient Soundscape</span>
-                <audio controls src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"></audio>
-              </div>
-              <div class="audio-item">
-                <span>Dialogue Clean-Up Demo</span>
-                <audio controls src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"></audio>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
+      <!-- ── Featured ──────────────────────────────────────────────
+           Cards with glow border on hover. Video left, audio right.
+      ──────────────────────────────────────────────────────────── -->
+      <section class="featured-section" id="featured">
+        <div class="wrap">
+          <p class="section-eyebrow">Featured</p>
+          <h2 class="section-title">Demo Reel + Sound Suite</h2>
+          <p class="section-sub">Layered presentation with a distinct visual and sonic voice.</p>
+          <div class="exp-grid">
 
-      <section class="experimental-projects" id="projects">
-        <div class="section-heading experimental-heading">
-          <p class="eyebrow">Projects</p>
-          <h2>Selected Work</h2>
-          <p>Expressive layouts for projects with measured motion and structure.</p>
-        </div>
-        <div class="experimental-tiles">
-          <article class="tile tile-left">
-            <h3>Film & Documentary</h3>
-            <p>Sound design, Foley work, and atmospheric mixing for short films and documentary projects.</p>
-            <a href="https://www.youtube.com/watch?v=5qap5aO4i9A" target="_blank" rel="noreferrer">Watch Film Clip</a>
-          </article>
-          <article class="tile tile-right">
-            <h3>Interactive & Games</h3>
-            <p>Audio implementation, environmental sound design, and sonic branding for interactive media.</p>
-            <a href="https://www.youtube.com/watch?v=5qap5aO4i9A" target="_blank" rel="noreferrer">Watch Gameplay Reel</a>
-          </article>
-          <article class="tile tile-bottom">
-            <h3>Broadcast & Podcast</h3>
-            <p>Audio production, dialogue editing, mixing, and mastering for professional broadcast quality.</p>
-            <a href="https://www.youtube.com/watch?v=5qap5aO4i9A" target="_blank" rel="noreferrer">Watch Podcast Trailer</a>
-          </article>
-        </div>
-      </section>
+            <article class="exp-card">
+              <h3>Demo Reel 2024</h3>
+              <div class="video-wrap">
+                <iframe
+                  src="https://www.youtube.com/embed/5qap5aO4i9A"
+                  title="Demo Reel"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </article>
 
-      <section class="experimental-contact" id="contact">
-        <div>
-          <p class="eyebrow">Contact</p>
-          <h2>Let's build your next sound experience</h2>
-          <p>
-            Ready to work on film, games, podcasts, or events? Reach out and let’s create something memorable.
-          </p>
-          <a class="button button-primary" href="mailto:nico@nicolasbarrera.com">Email Nico</a>
-          <div class="contact-links">
-            <a href="https://www.linkedin.com/in/nicolas-barrera-644a7a377/" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a href="https://www.instagram.com" target="_blank" rel="noreferrer">Instagram</a>
-            <a href="https://www.imdb.com" target="_blank" rel="noreferrer">IMDb</a>
+            <article class="exp-card">
+              <h3>Audio Demos</h3>
+              <div class="exp-audio-list">
+                <div class="exp-audio-item">
+                  <span>Action SFX Suite</span>
+                  <audio controls src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
+                </div>
+                <div class="exp-audio-item">
+                  <span>Ambient Soundscape</span>
+                  <audio controls src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"></audio>
+                </div>
+                <div class="exp-audio-item">
+                  <span>Dialogue Clean-Up Demo</span>
+                  <audio controls src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"></audio>
+                </div>
+              </div>
+            </article>
+
           </div>
         </div>
       </section>
+
+      <!-- ── Projects — asymmetric tile grid ───────────────────────
+           1 tall tile (grid-row: span 2) left + 2 stacked tiles
+           right. Cyan glow on hover per tile.
+      ──────────────────────────────────────────────────────────── -->
+      <section class="projects-section" id="projects">
+        <div class="wrap">
+          <p class="section-eyebrow">Projects</p>
+          <h2 class="section-title">Selected Work</h2>
+          <p class="section-sub">Expressive layouts with measured motion and structure.</p>
+          <div class="tiles-grid">
+
+            <article class="tile tile-a">
+              <span class="tile-num">01</span>
+              <div>
+                <h3>Film &amp; Documentary</h3>
+                <p>Sound design, Foley work, and atmospheric mixing for short films and documentary projects.</p>
+              </div>
+              <a href="https://www.youtube.com/watch?v=5qap5aO4i9A" target="_blank" rel="noreferrer">Watch Film Clip →</a>
+            </article>
+
+            <article class="tile tile-b">
+              <span class="tile-num">02</span>
+              <div>
+                <h3>Interactive &amp; Games</h3>
+                <p>Audio implementation, environmental sound design, and sonic branding for interactive media.</p>
+              </div>
+              <a href="https://www.youtube.com/watch?v=5qap5aO4i9A" target="_blank" rel="noreferrer">Watch Gameplay Reel →</a>
+            </article>
+
+            <article class="tile tile-c">
+              <span class="tile-num">03</span>
+              <div>
+                <h3>Broadcast &amp; Podcast</h3>
+                <p>Audio production, dialogue editing, mixing, and mastering for professional broadcast quality.</p>
+              </div>
+              <a href="https://www.youtube.com/watch?v=5qap5aO4i9A" target="_blank" rel="noreferrer">Watch Podcast Trailer →</a>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Contact ────────────────────────────────────────────────
+           Centered glow panel — pulsing border animation.
+      ──────────────────────────────────────────────────────────── -->
+      <section class="contact-section" id="contact">
+        <div class="wrap">
+          <div class="contact-glow">
+            <h2>Let's build your next sound experience</h2>
+            <p>
+              Ready to work on film, games, podcasts, or events? Reach out
+              and let's create something memorable.
+            </p>
+            <a href="mailto:nico@nicolasbarrera.com" class="contact-email-glow btn-glow" style="display:inline-flex;margin-bottom:2rem;">
+              Email Nico
+            </a>
+            <nav class="contact-socials" aria-label="Social links">
+              <a href="https://www.linkedin.com/in/nicolas-barrera-644a7a377/" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a href="https://www.instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+              <a href="https://www.imdb.com" target="_blank" rel="noreferrer">IMDb</a>
+            </nav>
+          </div>
+        </div>
+      </section>
+
     </main>
 
-    <footer class="footer experimental-footer">
-      <p>Experimental interactive presentation for Nico Barrera.</p>
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>© Nico Barrera · Sound Design &amp; Audio Engineering Portfolio</p>
+      </div>
     </footer>
+
     <script src="script.js" defer></script>
   </body>
 </html>

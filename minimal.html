@@ -8,72 +8,108 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="minimal.css" />
   </head>
-  <body class="minimal">
-    <!-- Technical Minimalist layout start -->
-    <header class="nav-banner">
-      <nav class="nav-wrapper minimal-nav">
-        <a class="logo" href="index.html">Nico Barrera</a>
+  <body>
+
+    <!-- ── Technical Minimalist ───────────────────────────────────
+         Direction: Engineering-focused precision layout — system UI,
+         monospace metadata, table-based projects, clean borders.
+         Inspired by Linear.app, Vercel, Railway, Clerk.
+    ──────────────────────────────────────────────────────────── -->
+
+    <header>
+      <nav class="nav-wrapper">
+        <a class="nav-logo" href="index.html">Nico Barrera</a>
         <button class="nav-toggle" aria-label="Open navigation">Menu</button>
         <ul class="nav-links">
           <li><a href="index.html">Original</a></li>
           <li><a href="editorial.html">Editorial</a></li>
           <li><a href="studio.html">Creative Studio</a></li>
-          <li><a href="minimal.html">Technical Minimalist</a></li>
+          <li><a href="minimal.html" aria-current="page">Technical Minimalist</a></li>
           <li><a href="experimental.html">Experimental</a></li>
           <li><a href="premium.html">Premium</a></li>
         </ul>
       </nav>
     </header>
 
-    <main class="minimal-shell">
-      <section class="minimal-hero">
-        <div>
-          <p class="eyebrow">Sound Design | Audio Engineering | Mixing</p>
-          <h1>Precise audio work for structured media and modern productions.</h1>
-          <p class="hero-text">
-            A calm, efficient portfolio for a sound engineer who values detail and clarity.
-          </p>
-        </div>
-        <div class="hero-code-block">
-          <p>role: sound-engineer</p>
-          <p>focus: film, games, broadcast</p>
-          <p>skills: mixing, design, post-production</p>
+    <main class="wrap">
+
+      <!-- ── Hero ──────────────────────────────────────────────────
+           Left col: headline + lede + CTAs.
+           Right col: monospace metadata card (role, focus, status).
+      ──────────────────────────────────────────────────────────── -->
+      <section class="hero" id="home">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="hero-eyebrow">// sound-engineer.portfolio</p>
+            <h1>Crafting immersive audio experiences for film, games, and interactive media.</h1>
+            <p class="hero-lede">
+              Sound engineer and designer building precise, narrative-driven
+              audio for film, games, and broadcast. Clean process, reliable output.
+            </p>
+            <div class="hero-btns">
+              <a href="#featured" class="btn-solid">View Work</a>
+              <a href="#contact" class="btn-outline">Get in Touch</a>
+            </div>
+          </div>
+          <aside class="meta-card" aria-label="Profile metadata">
+            <div class="meta-row">
+              <span class="meta-key">role</span>
+              <span class="meta-val">Sound Engineer</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-key">focus</span>
+              <span class="meta-val">Film, Games, Broadcast</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-key">skills</span>
+              <span class="meta-val">Mixing, Design, Post-Production</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-key">status</span>
+              <span class="meta-val available">● Available</span>
+            </div>
+          </aside>
         </div>
       </section>
 
-      <section class="minimal-section" id="about">
-        <div class="section-copy">
-          <p class="eyebrow">About</p>
-          <h2>Nico Barrera</h2>
-          <p>
-            Sound engineer and designer focused on creating immersive audio experiences.
-            Specialized in mixing, sound design, and audio post-production for film,
-            games, and broadcast media.
-          </p>
-          <p>
-            Passionate about sonic storytelling and pushing the boundaries of what audio
-            can achieve in interactive media.
-          </p>
-        </div>
-        <div class="minimal-image-block">
-          <img src="image.png" alt="Nico Barrera" />
+      <!-- ── About ─────────────────────────────────────────────────
+           Image left, structured bio text right.
+      ──────────────────────────────────────────────────────────── -->
+      <section class="about-section" id="about">
+        <p class="section-rule">About</p>
+        <div class="about-grid">
+          <figure class="about-img">
+            <img src="image.png" alt="Nico Barrera" />
+          </figure>
+          <div class="about-copy">
+            <h2>Nico Barrera</h2>
+            <p>
+              Sound engineer and designer focused on creating immersive audio
+              experiences. Specialized in mixing, sound design, and audio
+              post-production for film, games, and broadcast media.
+            </p>
+            <p>
+              Passionate about sonic storytelling and pushing the boundaries of
+              what audio can achieve in interactive media.
+            </p>
+          </div>
         </div>
       </section>
 
-      <section class="minimal-feature" id="featured">
-        <div class="section-heading minimal-heading">
-          <p class="eyebrow">Featured</p>
-          <h2>Demo reel and sound samples</h2>
-        </div>
-        <div class="minimal-grid">
-          <div class="card feature-card">
-            <h3>Demo Reel 2024</h3>
-            <div class="video-frame">
+      <!-- ── Featured ──────────────────────────────────────────────
+           Demo reel left, audio samples right.
+      ──────────────────────────────────────────────────────────── -->
+      <section class="featured-section" id="featured">
+        <p class="section-rule">Featured</p>
+        <div class="featured-grid">
+          <div>
+            <p class="card-label">Demo Reel 2024</p>
+            <div class="video-wrap">
               <iframe
                 src="https://www.youtube.com/embed/5qap5aO4i9A"
                 title="Demo Reel"
@@ -83,62 +119,102 @@
               ></iframe>
             </div>
           </div>
-
-          <div class="card feature-card compact">
-            <h3>Audio Demos</h3>
-            <ol class="minimal-list">
-              <li>Action SFX Suite</li>
-              <li>Ambient Soundscape</li>
-              <li>Dialogue Clean-Up Demo</li>
-            </ol>
-            <div class="audio-list minimal-audio">
-              <audio controls src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
-              <audio controls src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"></audio>
-              <audio controls src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"></audio>
+          <div>
+            <p class="card-label">Audio Demos</p>
+            <div class="audio-list-min">
+              <div class="audio-item-min">
+                <span>Action SFX Suite</span>
+                <audio controls src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
+              </div>
+              <div class="audio-item-min">
+                <span>Ambient Soundscape</span>
+                <audio controls src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"></audio>
+              </div>
+              <div class="audio-item-min">
+                <span>Dialogue Clean-Up Demo</span>
+                <audio controls src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"></audio>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="minimal-work" id="projects">
-        <div class="section-heading minimal-heading">
-          <p class="eyebrow">Projects</p>
-          <h2>Selected Work</h2>
-        </div>
-        <div class="minimal-listing">
-          <article>
-            <h3>Film & Documentary</h3>
-            <p>Sound design, Foley work, and atmospheric mixing for short films and documentary projects.</p>
-            <a href="https://www.youtube.com/watch?v=5qap5aO4i9A" target="_blank" rel="noreferrer">Watch Film Clip</a>
-          </article>
-          <article>
-            <h3>Interactive & Games</h3>
-            <p>Audio implementation, environmental sound design, and sonic branding for interactive media.</p>
-            <a href="https://www.youtube.com/watch?v=5qap5aO4i9A" target="_blank" rel="noreferrer">Watch Gameplay Reel</a>
-          </article>
-          <article>
-            <h3>Broadcast & Podcast</h3>
-            <p>Audio production, dialogue editing, mixing, and mastering for professional broadcast quality.</p>
-            <a href="https://www.youtube.com/watch?v=5qap5aO4i9A" target="_blank" rel="noreferrer">Watch Podcast Trailer</a>
-          </article>
+      <!-- ── Projects — proper HTML table ──────────────────────────
+           The key differentiator: structured table layout with
+           № / Project / Type / Year / Link columns.
+      ──────────────────────────────────────────────────────────── -->
+      <section class="projects-section" id="projects">
+        <p class="section-rule">Selected Work</p>
+        <table class="project-table" aria-label="Project list">
+          <thead>
+            <tr>
+              <th scope="col">№</th>
+              <th scope="col">Project</th>
+              <th scope="col">Type</th>
+              <th scope="col">Year</th>
+              <th scope="col"><span class="sr-only">Link</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="td-num">01</td>
+              <td class="td-name">Film &amp; Documentary</td>
+              <td class="td-type">Sound Design</td>
+              <td class="td-year">2024</td>
+              <td class="td-link"><a href="https://www.youtube.com/watch?v=5qap5aO4i9A" target="_blank" rel="noreferrer">Watch →</a></td>
+            </tr>
+            <tr>
+              <td class="td-num">02</td>
+              <td class="td-name">Interactive &amp; Games</td>
+              <td class="td-type">Implementation</td>
+              <td class="td-year">2024</td>
+              <td class="td-link"><a href="https://www.youtube.com/watch?v=5qap5aO4i9A" target="_blank" rel="noreferrer">Watch →</a></td>
+            </tr>
+            <tr>
+              <td class="td-num">03</td>
+              <td class="td-name">Broadcast &amp; Podcast</td>
+              <td class="td-type">Production</td>
+              <td class="td-year">2023</td>
+              <td class="td-link"><a href="https://www.youtube.com/watch?v=5qap5aO4i9A" target="_blank" rel="noreferrer">Watch →</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- ── Contact ────────────────────────────────────────────────
+           Structured block with field-label pairs.
+      ──────────────────────────────────────────────────────────── -->
+      <section class="contact-section" id="contact">
+        <p class="section-rule">Contact</p>
+        <div class="contact-block">
+          <h2>Let's build your next sound experience</h2>
+          <p>
+            Ready to work on film, games, podcasts, or events? Reach out and
+            let's talk creative audio direction.
+          </p>
+          <div class="contact-fields">
+            <div class="contact-field">
+              <span class="contact-field-label">Email</span>
+              <a href="mailto:nico@nicolasbarrera.com">nico@nicolasbarrera.com</a>
+            </div>
+            <div class="contact-field">
+              <span class="contact-field-label">Connect</span>
+              <nav class="contact-socials" aria-label="Social links">
+                <a href="https://www.linkedin.com/in/nicolas-barrera-644a7a377/" target="_blank" rel="noreferrer">LinkedIn</a>
+                <a href="https://www.instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+                <a href="https://www.imdb.com" target="_blank" rel="noreferrer">IMDb</a>
+              </nav>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="minimal-final" id="contact">
-        <p class="eyebrow">Contact</p>
-        <h2>Let's build your next sound experience</h2>
-        <p>Ready to work on film, games, podcasts, or events? Reach out and let's talk creative audio direction.</p>
-        <a class="button button-primary" href="mailto:nico@nicolasbarrera.com">Email Nico</a>
-        <div class="contact-links minimal-links">
-          <a href="https://www.linkedin.com/in/nicolas-barrera-644a7a377/" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a href="https://www.instagram.com" target="_blank" rel="noreferrer">Instagram</a>
-          <a href="https://www.imdb.com" target="_blank" rel="noreferrer">IMDb</a>
-        </div>
-      </section>
     </main>
 
-    <footer class="footer minimal-footer">
-      <p>Technical minimalist presentation for Nico Barrera.</p>
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>© Nico Barrera · Sound Design &amp; Audio Engineering Portfolio</p>
+      </div>
     </footer>
 
     <script src="script.js" defer></script>
