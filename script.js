@@ -22,11 +22,11 @@ anchorLinks.forEach((link) => {
 const projectCards = document.querySelectorAll('.project-card');
 projectCards.forEach((card) => {
   card.addEventListener('mouseenter', () => {
-    card.style.transform = 'translateY(-4px)';
-    card.style.boxShadow = '0 28px 80px rgba(41, 128, 185, 0.22)';
+    card.style.transform = 'translateY(-2px)';
+    card.style.boxShadow = '0 12px 32px rgba(41, 128, 185, 0.18)';
   });
   card.addEventListener('mouseleave', () => {
     card.style.transform = 'translateY(0)';
-    card.style.boxShadow = '0 24px 70px rgba(1, 5, 18, 0.24)';
+    card.style.boxShadow = '0 8px 24px rgba(1, 5, 18, 0.16)';
   });
 });
