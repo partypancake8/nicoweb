@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <title>Editorial Portfolio | Nico Barrera</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="editorial.css" />
+  </head>
+  <body>
+
+    <!-- ── Editorial Portfolio ─────────────────────────────────
+         Direction: Magazine/editorial — strong serif typography,
+         asymmetric columns, warm cream palette, horizontal rules.
+         Inspired by Dezeen, Wallpaper*, architectural firm sites.
+    ──────────────────────────────────────────────────────────── -->
+
+    <header>
+      <nav class="nav-wrapper">
+        <a class="nav-logo" href="index.html">Nico Barrera</a>
+        <button class="nav-toggle" aria-label="Open navigation">Menu</button>
+        <ul class="nav-links">
+          <li><a href="index.html">Original</a></li>
+          <li><a href="editorial.html" aria-current="page">Editorial</a></li>
+          <li><a href="studio.html">Creative Studio</a></li>
+          <li><a href="minimal.html">Technical Minimalist</a></li>
+          <li><a href="experimental.html">Experimental</a></li>
+          <li><a href="premium.html">Premium</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="wrap">
+
+      <!-- ── Hero ──────────────────────────────────────────────
+           Kicker row (vol / date) + oversized serif headline +
+           lede + right-aligned text CTAs. Purely typographic.
+      ─────────────────────────────────────────────────────────── -->
+      <section class="hero" id="home">
+        <div class="hero-kicker">
+          <span>Vol. 01 · Nico Barrera</span>
+          <span>Sound Design · 2024</span>
+        </div>
+        <h1>Crafting immersive audio experiences for film, games, and interactive media.</h1>
+        <div class="hero-body">
+          <p class="hero-lede">
+            Dynamic sound designer with a passion for creating sonic
+            landscapes that elevate storytelling and engagement across
+            film, games, and broadcast.
+          </p>
+          <div class="hero-cta">
+            <a href="#featured" class="text-link">View Demo Reel ↗</a>
+            <a href="#contact" class="text-link">Get in Touch ↗</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── About ─────────────────────────────────────────────
+           Two-column: bio copy left, editorial portrait right.
+      ─────────────────────────────────────────────────────────── -->
+      <section class="about-section" id="about">
+        <p class="section-label">About</p>
+        <div class="about-grid">
+          <div class="about-copy">
+            <h2>Nico Barrera</h2>
+            <p>
+              Sound engineer and designer focused on creating immersive
+              audio experiences. Specialized in mixing, sound design, and
+              audio post-production for film, games, and broadcast media.
+            </p>
+            <p>
+              Passionate about sonic storytelling and pushing the
+              boundaries of what audio can achieve in interactive media.
+            </p>
+          </div>
+          <figure class="about-portrait">
+            <img src="image.png" alt="Nico Barrera" />
+            <figcaption>Nico Barrera · Sound Designer &amp; Audio Engineer</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- ── Featured ──────────────────────────────────────────
+           Two-column spread: demo reel left, audio list right.
+           Audio items separated by horizontal rules.
+      ─────────────────────────────────────────────────────────── -->
+      <section class="featured-section" id="featured">
+        <p class="section-label">Featured</p>
+        <div class="featured-grid">
+
+          <article class="reel-col">
+            <p class="col-label">Demo Reel 2024</p>
+            <div class="video-wrap">
+              <iframe
+                src="https://www.youtube.com/embed/5qap5aO4i9A"
+                title="Demo Reel"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </article>
+
+          <article class="audio-col">
+            <p class="col-label">Audio Demos</p>
+            <p class="col-sub">
+              Curated sound demonstrations that highlight design,
+              ambience, and narrative detail.
+            </p>
+            <div class="audio-stack">
+              <div class="audio-entry">
+                <span class="audio-title">Action SFX Suite</span>
+                <audio controls src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
+              </div>
+              <div class="audio-entry">
+                <span class="audio-title">Ambient Soundscape</span>
+                <audio controls src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"></audio>
+              </div>
+              <div class="audio-entry">
+                <span class="audio-title">Dialogue Clean-Up Demo</span>
+                <audio controls src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"></audio>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- ── Selected Work ──────────────────────────────────────
+           Numbered list: 01 | title + description | link
+           Horizontal rules between entries.
+      ─────────────────────────────────────────────────────────── -->
+      <section class="projects-section" id="projects">
+        <p class="section-label">Selected Work</p>
+        <div class="project-list">
+
+          <article class="project-row">
+            <span class="project-num">01</span>
+            <div class="project-body">
+              <h3 class="project-title">Film &amp; Documentary</h3>
+              <p class="project-desc">
+                Sound design, Foley work, and atmospheric mixing for short
+                films and documentary projects.
+              </p>
+            </div>
+            <a
+              href="https://www.youtube.com/watch?v=5qap5aO4i9A"
+              target="_blank" rel="noreferrer"
+              class="project-link"
+            >Watch Clip ↗</a>
+          </article>
+
+          <article class="project-row">
+            <span class="project-num">02</span>
+            <div class="project-body">
+              <h3 class="project-title">Interactive &amp; Games</h3>
+              <p class="project-desc">
+                Audio implementation, environmental sound design, and
+                sonic branding for interactive media.
+              </p>
+            </div>
+            <a
+              href="https://www.youtube.com/watch?v=5qap5aO4i9A"
+              target="_blank" rel="noreferrer"
+              class="project-link"
+            >Watch Reel ↗</a>
+          </article>
+
+          <article class="project-row">
+            <span class="project-num">03</span>
+            <div class="project-body">
+              <h3 class="project-title">Broadcast &amp; Podcast</h3>
+              <p class="project-desc">
+                Audio production, dialogue editing, mixing, and mastering
+                for professional broadcast quality.
+              </p>
+            </div>
+            <a
+              href="https://www.youtube.com/watch?v=5qap5aO4i9A"
+              target="_blank" rel="noreferrer"
+              class="project-link"
+            >Watch Trailer ↗</a>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- ── Contact ────────────────────────────────────────────
+           Large serif headline, italic serif email link, social.
+      ─────────────────────────────────────────────────────────── -->
+      <section class="contact-section" id="contact">
+        <p class="section-label">Contact</p>
+        <h2 class="contact-headline">
+          Let's build your next<br>sound experience.
+        </h2>
+        <a href="mailto:nico@nicolasbarrera.com" class="contact-email">
+          nico@nicolasbarrera.com
+        </a>
+        <nav class="contact-social" aria-label="Social links">
+          <a href="https://www.linkedin.com/in/nicolas-barrera-644a7a377/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://www.instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="https://www.imdb.com" target="_blank" rel="noreferrer">IMDb</a>
+        </nav>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>© Nico Barrera · Sound Design &amp; Audio Engineering Portfolio</p>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
